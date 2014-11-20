@@ -1,6 +1,6 @@
 {
   "name": "fixmynode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "yvanscher",
   "description": "fixes file permissions on shitty node installations",
   "main": "client.js",
