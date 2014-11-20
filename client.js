@@ -3,7 +3,7 @@
 var fs = require('fs')
 
 // - sudo chown -R `whoami` ~/.npm
-fs.chown('/usr/local/lib/node_modules', function(err){
+fs.chown('', function(err){
   console.log(err)
 })
 

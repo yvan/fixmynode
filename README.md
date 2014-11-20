@@ -31,16 +31,17 @@ constantly have to run your node commands as 'sudo' and plug in your password. S
 right?
 
 There could be a permissions problem on your ~/.npm directory. For users who don't know
-what'~' means, it's a shorthand for /Users/YOUR_USERNAME/ where the first '/' is your
-root directory. Full path to your '~/.npm' directory is '/Users/YOUR_USERNAME/.npm'; it
-stores various npm functionality.
+what'~' means, it's a shorthand for /Users/YOUR_USERNAME/ (the 'home' directory) where
+the first '/' is your root directory. Full path to your '~/.npm' directory is
+'/Users/YOUR_USERNAME/.npm'; it stores various npm functionality. The easiest way to
+get to your home directory on a unix based system is to type 'cd'. This goes to home.
 
 There could also a permissions problem on your /usr/local/lib/node_modules. This is where
 npm tries to store your globally installed modules. It is the system level version of
 the 'node_modules' folder you find in basically any project you make and install
-dependencies into
+with dependencies.
 
-Usage - Solve Yo Problems AKA intro was TLDR
+Usage - Solve Yo Problems, AKA intro was TLDR
 =================
 Run:
 ```
@@ -50,9 +51,15 @@ Password:TYPE_YOUR_PASSWORD
 That's it. You're done, that will fix the two permissions problems above and from now on out you should be able to use:
 ```
 npm install SOME_MODULE
+//or
+npm install -g SOME_MODULE
 ```
-without having to type in your password everytime.
+without having to type in 'sudo' your password everytime.
 
+The Future
+==========
+Maybe someone who knows how to work one of the machines called "Windows" can fork me?
+I doubt this works on a windows system as is, since /bin is probably somewhere else.
 
 Moral Support
 =============
