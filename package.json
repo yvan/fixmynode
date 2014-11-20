@@ -1,0 +1,19 @@
+{
+  "name": "fixmynode",
+  "version": "0.0.1",
+  "description": "fixes file permissions on shitty node installations",
+  "main": "client.js",
+  "scripts": {
+    "test": "testfix"
+  },
+  "bin":{
+    "fixmynode":"client.js",
+    "fix": "client.js"
+  },
+  "keywords": [
+    "fix",
+    "node"
+  ],
+  "author": "yvanscher",
+  "license": "ISC"
+}
