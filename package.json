@@ -1,19 +1,30 @@
 {
   "name": "fixmynode",
   "version": "0.0.1",
+  "author": "yvanscher",
   "description": "fixes file permissions on shitty node installations",
   "main": "client.js",
-  "scripts": {
-    "test": "testfix"
+  "repository":{
+    "type":"git",
+    "url":"git://github.com/yvanscher/fixmynode.git"
   },
   "bin":{
     "fixmynode":"client.js",
     "fix": "client.js"
   },
+  "dependencies":{
+    "osenv":"latest",
+    "userid":"latest"
+  },
   "keywords": [
+    "permissions",
+    "password",
+    "install",
+    "error",
+    "node",
+    "unix",
+    "sudo",
     "fix",
-    "node"
-  ],
-  "author": "yvanscher",
-  "license": "ISC"
+    "npm"
+  ]
 }

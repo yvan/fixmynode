@@ -23,7 +23,7 @@ npm ERR! errno 3
 npm ERR! stack Error: EACCES, open '/Users/YOUR_USERNAME/.npm/-/all/.cache.json'
 npm ERR!
 npm ERR! Additional logging details can be found in:
-npm ERR!     /Users/chietala/npm-debug.log
+npm ERR!     /Users/YOUR_USERNAME/npm-debug.log
 npm ERR! not ok code 0
 ```
 It whines at you, "Please try running this command again as root/Administrator." So you
@@ -34,32 +34,36 @@ There could be a permissions problem on your ~/.npm directory. For users who don
 what'~' means, it's a shorthand for /Users/YOUR_USERNAME/ (the 'home' directory) where
 the first '/' is your root directory. Full path to your '~/.npm' directory is
 '/Users/YOUR_USERNAME/.npm'; it stores various npm functionality. The easiest way to
-get to your home directory on a unix based system is to type 'cd'. This goes to home.
+get to your home directory on a unix based system is to type 'cd'. This goes to home. I
+set make this file belong toeh user who runs the command and I set the group id to admin.
 
 There could also a permissions problem on your /usr/local/lib/node_modules. This is where
 npm tries to store your globally installed modules. It is the system level version of
 the 'node_modules' folder you find in basically any project you make and install
-with dependencies.
+with dependencies. this file belongs to the user running the command the group id is
+set to admin.
 
 Usage - Solve Yo Problems, AKA intro was TLDR
 =================
 Run:
 ```
 sudo fixmynode
-Password:TYPE_YOUR_PASSWORD
+Password:TYPE_YO_PASSWORD
 ```
-That's it. You're done, that will fix the two permissions problems above and from now on out you should be able to use:
+That's it. You're done, that will fix the two permissions problems above and from now on
+out you should be able to use:
 ```
 npm install SOME_MODULE
 //or
 npm install -g SOME_MODULE
 ```
-without having to type in 'sudo' your password everytime.
+without having to type in 'sudo' and your password everytime.
 
 The Future
 ==========
 Maybe someone who knows how to work one of the machines called "Windows" can fork me?
-I doubt this works on a windows system as is, since /bin is probably somewhere else.
+I doubt this works on a windows system as is. The 'userid' dependency of my module also
+doesn't work for windows. So you won't be able to set the proper IDs on both folders.
 
 Moral Support
 =============
