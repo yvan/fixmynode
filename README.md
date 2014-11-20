@@ -32,16 +32,16 @@ right?
 
 There could be a permissions problem on your ~/.npm directory. For users who don't know
 what'~' means, it's a shorthand for /Users/YOUR_USERNAME/ (the 'home' directory) where
-the first '/' is your root directory. Full path to your '~/.npm' directory is
+the first '/' is your root directory. The full path to your '~/.npm' directory is
 '/Users/YOUR_USERNAME/.npm'; it stores various npm functionality. The easiest way to
-get to your home directory on a unix based system is to type 'cd'. This goes to home. I
-set make this file belong toeh user who runs the command and I set the group id to admin.
+get to your home directory on a unix based system is to type 'cd'. This goes to home
+sweet home. I make this file belong to the user who runs the command and I set the group id  to 'admin.'
 
 There could also a permissions problem on your /usr/local/lib/node_modules. This is where
 npm tries to store your globally installed modules. It is the system level version of
 the 'node_modules' folder you find in basically any project you make and install
-with dependencies. this file belongs to the user running the command the group id is
-set to admin.
+with dependencies. I make this file belong to the user running the command; the group id
+is set to 'admin.''
 
 Usage - Solve Yo Problems, AKA intro was TLDR
 =================
@@ -50,14 +50,14 @@ Run:
 sudo fixmynode
 Password:TYPE_YO_PASSWORD
 ```
-That's it. You're done, that will fix the two permissions problems above and from now on
+That's it; you're done. That will fix the two permissions problems above and from now on
 out you should be able to use:
 ```
 npm install SOME_MODULE
 //or
 npm install -g SOME_MODULE
 ```
-without having to type in 'sudo' and your password everytime.
+without having to type in 'sudo' and your password every time.
 
 The Future
 ==========
