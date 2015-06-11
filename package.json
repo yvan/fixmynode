@@ -1,6 +1,6 @@
 {
   "name": "fixmynode",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "author": "yvanscher",
   "description": "fixes file permissions on shitty node installations",
   "main": "client.js",
@@ -13,8 +13,8 @@
     "fix": "client.js"
   },
   "dependencies":{
-    "osenv":"latest",
-    "userid":"latest"
+    "osenv":"0.1.0",
+    "userid":"0.1.2"
   },
   "keywords": [
     "permissions",

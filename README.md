@@ -2,6 +2,12 @@ Fixmynode - Fixes the permisssions on your node installation on OSX.
 ============================================================
 [![NPM](https://nodei.co/npm/fixmynode.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/fixmynode/)
 
+Install with:
+
+```
+npm install -g fixmynode
+```
+
 Do you constantly get this annoying error?
 ```
 npm ERR! Error: EACCES, open '/Users/YOUR_USERNAME/.npm/-/all/.cache.json'
