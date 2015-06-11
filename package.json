@@ -13,8 +13,8 @@
     "fix": "client.js"
   },
   "dependencies":{
-    "osenv":"0.1.0",
-    "userid":"0.1.2"
+    "osenv": "0.1.0",
+    "userid": "0.1.2"
   },
   "keywords": [
     "permissions",
